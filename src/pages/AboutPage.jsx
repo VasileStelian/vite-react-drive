@@ -12,7 +12,7 @@ const AboutPage = () => (
             <h2 className={`${styles.paragraph} text-center`}>De la infiintare</h2>
         </div>
          <div className="flex items-center flex-col"> 
-        <NumberCounter targetNumber={3000} speed={5} />
+        <NumberCounter targetNumber={3000} speed={1} />
         <h1 className={`${styles.paragraph} text-center`}>Sesiuni de Legislatie</h1>
         </div>
         <div className="flex items-center flex-col">  

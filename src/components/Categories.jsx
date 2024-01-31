@@ -61,14 +61,7 @@ const Categories = () => {
         <p className={`${styles.paragraph} cursor-default max-w-[470px] mt-5 `}>
           Descoperă detalii suplimentare despre categoria de vehicule pe care ai
           intenția să le conduci.
-          <br />
-          <span className="text-gradient font-bold">
-            În procesul de obținere a permisului de conducere, primul pas
-            esențial este selectarea categoriei de vehicule pe care dorim să le
-            putem conduce. Prin urmare, pentru fiecare categorie de vehicule,
-            sunt disponibile informațiile esențiale care te vor ajuta să
-            înțelegi restricțiile și cerințele asociate acestora.
-          </span>
+          
         </p>
         <div className="hidden md:flex">
           <div className="absolute hidden ss:block w-[50%] h-[80%] right-20 bottom-1  blue__gradient" />

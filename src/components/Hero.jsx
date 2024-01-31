@@ -8,7 +8,7 @@ const Hero = () => (
     >
       <div className="flex flex-row justify-between items-center w-full">
         <h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100px] leading-[75px]">
-          Școală de Șoferi <br className="sm:block hidden" />{" "}
+          Școal de Șoferi <br className="sm:block hidden" />{" "}
           <span className="text-gradient">Dia Drive</span>
         </h1>
         <div className="ss:flex hidden md:mr-4 mr-0 z-10">
@@ -20,8 +20,6 @@ const Hero = () => (
       </h1>
       <p className={`${styles.paragraph} text-justify max-w-[470px] mt-5`}>
       <span className="text-gradient font-semibold">"Succesul nu este întotdeauna despre măreție, ci despre consistență." </span>
-
-Cu sprijinul instructorilor noștri profesioniști, vei ajunge să conduci mașina singur într-un mod încrezător și priceput.
       </p>
     </div>
     <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}>

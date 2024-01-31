@@ -82,11 +82,7 @@ const Faq = () => (
       </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5 text-justify`}>
         Atunci când suntem pregătiți să demarăm cursurile la școala de șoferi,
-        ne lovim de numeroase întrebări pentru care căutăm răspunsuri.{" "}
-        <span className="text-gradient font-bold">
-          Cele enumerate sunt doar câteva dintre cele mai întâlnite. Dacă aveți
-          altele, vă rugăm să nu ezitați să ne contactați!
-        </span>
+        ne lovim de numeroase întrebări pentru care căutăm răspunsuri.
       </p>
     </div>
   </section>
