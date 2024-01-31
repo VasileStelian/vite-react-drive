@@ -13,7 +13,7 @@ const StatsCard = ({ title, icon, content }) => (
 
 const Stats = () => (
   <section id="categories" className="flex-1 mt-5">
-    <div className="flex md:justify-between justify-center flex-wrap">
+    <div className="flex flex-col md:justify-between justify-center flex-wrap">
       {[...stats].map((stats) => (
         <StatsCard key={stats.id} {...stats} />
       ))}
