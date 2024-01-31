@@ -1,8 +1,9 @@
 import styles from "../styles";
 import { arrowUp } from "../assets";
+import { Link } from 'react-router-dom';
 
 const GetStarted = () => (
-  <a href="/contact">
+  <Link to="/contact">
     <div
       className={`${styles.flexCenter} w-[140px] h-[140px] rounded-full bg-blue-gradient  p-1 cursor-pointer`}
     >
@@ -20,7 +21,7 @@ const GetStarted = () => (
         </p>
       </div>
     </div>
-  </a>
+  </Link>
 );
 
 export default GetStarted;

@@ -1,4 +1,5 @@
 import logo from "./logo.svg";
+import logobig from "./logobig.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 import arrowUp from "./arrow-up.svg";
@@ -82,6 +83,7 @@ import BE2 from "./BE2.jpeg";
  
 export {
   logo,
+  logobig,
   menu,
   arrowUp,
   close,
