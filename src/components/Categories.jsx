@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { categories } from "../constants";
-import { close } from "../assets";
+import { close, arrowUp } from "../assets";
 import styles, { layout } from "../styles";
 
 const CategoryCard = ({ icon, title, content, onClick }) => (
@@ -14,14 +14,21 @@ const CategoryCard = ({ icon, title, content, onClick }) => (
       <img src={icon} alt="star" className="w-[50%] h-[50%] object-contain" />
     </div>
     <div className="flex-1 flex flex-col ml-3">
-      <h4 className="font-poppins font-semibold cursor-pointer text-white text-[25px] leading-[23.4px] mb-2">
+      <div className="flex justify-between">
+      <h1 className="font-poppins font-semibold cursor-pointer text-white text-[25px] leading-[23.4px] mb-2">
         {title}
-      </h4>
+      </h1>
+      <img
+            src={arrowUp}
+            className="w-[25px]"
+          />
+          </div>
       <p className="font-poppins cursor-pointer font-normal text-dimWhite text-[16px] leading-[24px] line-clamp-4">
         {content}
       </p>
     </div>
   </div>
+  
 );
 
 const Categories = () => {

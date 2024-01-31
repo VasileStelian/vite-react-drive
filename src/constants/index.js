@@ -30,13 +30,7 @@ export const navLinks = [
 ];
 
 export const categories = [
-  {
-    id: "AM",
-    icon: AM,
-    title: "AM",
-    content:
-      "Categoria AM este o categorie de permis de conducere care permite conducătorului să opereze mopede și scutere cu o viteză maximă de până la 45 km/h. Această categorie se adresează în principal vehiculelor cu motor de mică capacitate și este potrivită pentru cei care doresc să înceapă să conducă două roți într-un mediu urban sau suburban.",
-  },
+  
   {
     id: "A1",
     icon: A1,
@@ -72,6 +66,13 @@ export const categories = [
     title: "B",
     content:
       "Autovehiculul cu o masă totală maximă autorizată de până la 3.500 kg și cu un număr de locuri, în afara șoferului, de maximum 8. - Ansamblul constituit dintr-un autovehicul de tracțiune din categoria B și o remorcă a cărei masă totală maximă autorizată nu depășește 750 kg. - Ansamblul de vehicule cu o masă totală maximă autorizată de până la 4.250 kg, compus dintr-un autovehicul de tracțiune din categoria B și o remorcă a cărei masă totală maximă autorizată depășește 750 kg.",
+  },
+  {
+    id: "BSpecial",
+    icon: B,
+    title: "B Special",
+    content:
+      "Categoria B specială oferă un mediu empatic și inclusiv pentru persoanele cu dizabilități. Aici, accentul se pune pe sprijinul reciproc și dezvoltarea abilităților individuale. Participanții sunt întâmpinați cu căldură, iar fiecare moment este adaptat pentru a asigura o experiență confortabilă. În acest spațiu, diversitatea este sărbătorită, iar fiecare reușită este primită cu entuziasm.",
   },
   {
     id: "BE",
@@ -244,7 +245,7 @@ export const stats = [
   {
     id: "stats-3",
     title: "Experienta",
-    content: "De mai bine de 10 ani, ne dedicăm pregătirii cursanților pentru examenele auto în Județul Bacău. Pe parcursul acestei perioade, echipa Dia Drive a evoluat semnificativ și a acordat o atenție deosebită dezvoltării personalului.",
+    content: "De mai bine de 15 ani, ne dedicăm pregătirii cursanților pentru examenele auto în Județul Bacău. Pe parcursul acestei perioade, echipa Dia Drive a evoluat semnificativ și a acordat o atenție deosebită dezvoltării personalului.",
     icon:EXPERIENCE,
   },
 ];
