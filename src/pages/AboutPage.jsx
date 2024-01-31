@@ -6,7 +6,7 @@ import styles from "../styles";
 const AboutPage = () => (
     <div className="relative min-h-screen">
         <AboutUs />
-        <div className="relative z-50 flex flex-wrap justify-center gap-3 md:gap-40 text-white bg-black/40 p-6 font-poppins">
+        <div className="relative z-50 flex flex-col md:flex-row md:gap-40  justify-center gap-3  text-white bg-black/40 p-6 font-poppins">
         <div className="flex justify-center flex-col"> 
             <h1 className="text-center text-[20.7px] font-semibold">Cateva Cife</h1>
             <h2 className={`${styles.paragraph} text-center`}>De la infiintare</h2>
