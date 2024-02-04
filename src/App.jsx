@@ -1,7 +1,7 @@
 import styles from "./styles";
 import React, { useState, useEffect } from 'react';
 import { loading } from "./assets"
-import { BrowserRouter, Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Footer, Navbar, Divider } from "./components";
 import { ContactPage, Homepage, GalleryPage, AboutPage, NotFoundPage, } from "./pages";
 
