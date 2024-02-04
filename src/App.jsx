@@ -1,7 +1,7 @@
 import styles from "./styles";
 import React, { useState, useEffect } from 'react';
 import { loading } from "./assets"
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Router, Route, Routes } from "react-router-dom";
 import { Footer, Navbar, Divider } from "./components";
 import { ContactPage, Homepage, GalleryPage, AboutPage, NotFoundPage, } from "./pages";
 
@@ -35,7 +35,7 @@ const App = () => {
   }
 
   return (
-    <Router>
+    <BrowserRouter>
       {contentLoaded ? (
         <div className="bg-primary w-full overflow-hidden">
           <div className={`${styles.paddingX} ${styles.flexCenter}`}>
@@ -63,7 +63,7 @@ const App = () => {
       ) : (
         <LoadingScreen />
       )}
-    </Router>
+    </BrowserRouter>
   );
 };
 

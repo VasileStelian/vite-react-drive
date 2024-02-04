@@ -36,7 +36,7 @@ const Contact = () => {
           </p>
         </div>
         <div className="flex flex-row flex-wrap justify-center">
-          <div className="flex flex-col p-2 max-w-[450px] bg-black/40  rounded-l-lg">
+          <div className="flex flex-col py-4 md:pl-5 pl-[60px]  max-w-[450px] bg-black/40  rounded-l-lg">
             <h1 className="text-white text-[30px] font-bold font-poppins">
               Completează<span className="text-gradient"> formularul!</span>
             </h1>
@@ -45,7 +45,7 @@ const Contact = () => {
                 <div key={field.name}>
                   {field.type === "select" ? (
                     <select
-                      className="mt-2 border border-black rounded-lg p-1 font-semibold"
+                      className="mt-2 border w-[204px] border-black rounded-lg p-1 font-semibold"
                       name={field.name}
                       value={formData[field.name]}
                       onChange={handleChange}
