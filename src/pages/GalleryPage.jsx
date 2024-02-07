@@ -1,7 +1,15 @@
+import { Helmet } from "react-helmet";
 import { Gallery } from "../components";
 
 
 const GalleryPage = () => (
+  <>
+  <Helmet>
+    <title>
+      Galerie Foto | DiaDrive
+    </title>
+    <meta name="description" content="Aici puteti vizualiza toată flota noastră auto!" />
+  </Helmet>
     <section className="relative min-h-screen">
   <div className="relative z-20 bg-black/30 rounded-2xl">
     <h1 className=' ss:text-[30px] text-white font-bold text-center font-poppins my-10'>Flota Auto -<span className="text-gradient-reverse"> Dia Drive</span></h1>
@@ -13,6 +21,7 @@ const GalleryPage = () => (
     <div className="absolute w-[100%] h-[50%] right-20 bottom-20 blue__gradient" />
   </div>
 </section>
+</>
 )
 
 export default GalleryPage;
