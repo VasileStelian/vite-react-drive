@@ -227,6 +227,12 @@ export const faq = [
       "Ai posibilitatea să participi la cursurile școlii de șoferi în orice județ, însă examenul va trebui să-l susții în municipiul reședință al județului în care ai domiciliul sau viza de flotant.",
     title: "Nu am domiciliul în judeţul Bacău. Pot face şcoala de şoferi aici? Unde voi susţine examenul?",
   },
+  {
+    id: "faq-6",
+    content:
+      "Datorită dinamicii pieței, stabilirea unui preț fix este dificilă. Vă invităm să ne contactați direct la numărul 0746594104 pentru a vă oferi o cotație corectă",
+    title: "Cum variază tarifele pentru cursurile școlii de șoferi?",
+  },
 ];
 
 export const stats = [

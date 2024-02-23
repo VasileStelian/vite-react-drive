@@ -15,9 +15,9 @@ const CategoryCard = ({ icon, title, content, onClick }) => (
     </div>
     <div className="flex-1 flex flex-col ml-3">
       <div className="flex justify-between">
-      <h1 className="font-poppins font-semibold cursor-pointer text-white text-[25px] leading-[23.4px] mb-2">
+      <h2 className="font-poppins font-semibold cursor-pointer text-white text-[25px] leading-[23.4px] mb-2">
         {title}
-      </h1>
+      </h2>
       <img
             src={arrowUp}
             className="w-[25px]"

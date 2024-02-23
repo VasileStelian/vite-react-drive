@@ -8,7 +8,7 @@ const Navbar = ({scrollToSection}) => {
 
   return (
     <nav className="w-full relative flex py-6 justify-between items-center navbar z-[150] ">
-      <img src={logo} alt="diadrive" className="w-[124px] h-[32px]" />
+      <img src={logo} alt="diadrive" className="w-[120px] " />
       <ul className="list-none sm:flex hidden justify-end items-center flex-1 ">
         {navLinks.map((nav, index) => (
           <li
