@@ -1,4 +1,4 @@
-import { Contact, Map } from "../components";
+import { Contact, Map, Faq } from "../components";
 import { Helmet } from "react-helmet";
 
 const ContactPage = () => (
@@ -12,8 +12,9 @@ Acesta este primul pas pentru obținerea permisului de conducere! Ce mai aștep�
       />
     </Helmet>
     <section className="">
-      <div className="z-10 rounded-2xl pb-6">
+      <div className="z-10 p-4 rounded-2xl pb-6">
         <Contact />
+        <Faq />
         <Map />
       </div>
      

@@ -73,8 +73,8 @@ const Footer = () => (
       ))}
       <SocialMediaLinks socialMediaLinks={socialMedia} />
     </div>
-    <span className=" flex">asd</span>
-    <p className="text-center mt-4 text-white font-poppins">
+
+    <p className="text-center mt-4 text-white ">
     © {new Date().getFullYear()} | DiaDrive SRL Bacau. Toate Drepturile Rezervate.
     </p>
   </section>
