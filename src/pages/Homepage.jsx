@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet";
-import { Categories, Faq, Hero, Stats } from "../components";
+import { Faq, Hero, Stats } from "../components";
 
 
 
@@ -13,7 +13,6 @@ const Homepage = () => (
     </Helmet>
     <section className="p-4">
         <Hero />
-        <Categories />
         <Faq />
         <Stats />
     </section>

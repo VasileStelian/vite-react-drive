@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { loading } from "./assets"
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Footer, Navbar } from "./components";
-import { ContactPage, Homepage, GalleryPage, AboutPage, NotFoundPage, } from "./pages";
+import { ContactPage, Homepage, GalleryPage, AboutPage, NotFoundPage, CategoriesPage } from "./pages";
 
 const LoadingScreen = () => (
   <div className="fixed top-0 left-0 right-0 bottom-0 flex flex-wrap flex-col items-center justify-center bg-black z-50">
@@ -27,29 +27,24 @@ const App = () => {
     };
   }, []);
 
-  const scrollToSection = (sectionId) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({behavior: 'smooth'});
-    }
-  }
-
+  
   return (
     <BrowserRouter>
       {contentLoaded ? (
-        <div className="bg-primary w-full overflow-hidden">
+        <main className=" w-full overflow-hidden">
           <div className={`${styles.paddingX} ${styles.flexCenter}`}>
             <div className={`${styles.boxWidth}`}>
-              <Navbar scrollToSection={scrollToSection} />
+              <Navbar />
             </div>
           </div>
 
-          <div className={`bg-primary ${styles.flexStart}`}>
+          <div className={` ${styles.flexStart}`}>
             <div className={`${styles.boxWidth}`}>
               <Routes>
                 
                 <Route path="/" element={<Homepage />} />
                 <Route path="/contact" element={<ContactPage />} />
+                <Route path="/categorii" element={<CategoriesPage />} />
                 <Route path="/galerie" element={<GalleryPage />} />
                 <Route path="/despre" element={<AboutPage />} />
                 <Route path="*" element={<NotFoundPage />} />
@@ -57,7 +52,12 @@ const App = () => {
               <Footer />
             </div>
           </div>
-        </div>
+    <div className=' top-0 left-0 h-full -z-50 fixed '>
+          <div id="move" className="blob z-1 pointer-events-none"></div>
+          <div className="blob z-1 pointer-events-none text-white">made by razor</div>
+          <div className="blob z-1 pointer-events-none"></div>
+    </div>
+        </main>
       ) : (
         <LoadingScreen />
       )}

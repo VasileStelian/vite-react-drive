@@ -3,6 +3,7 @@ import ContactPage from "./ContactPage";
 import GalleryPage from "./GalleryPage";
 import AboutPage from "./AboutPage";
 import NotFoundPage from "./NotFoundPage";
+import CategoriesPage from "./CategoriesPage";
 
 
 export {
@@ -11,4 +12,5 @@ export {
     GalleryPage,
     AboutPage,
     NotFoundPage,
+    CategoriesPage,
 }

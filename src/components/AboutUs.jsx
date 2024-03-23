@@ -1,7 +1,7 @@
 import styles from "../styles";
 
 const AboutUs = () => (
-  <div className="relative p-2 flex justify-center items-center z-50">
+  <div className="relative p-2 flex justify-center items-center">
     <div className="flex rounded-lg  px-4 flex-col md:w-[70%] sm:w-[700px] text-justify">
       <h1 className={`${styles.heading2} text-center`}>
         Despre <span className="text-gradient">noi</span>

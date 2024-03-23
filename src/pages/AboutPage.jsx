@@ -36,10 +36,7 @@ const AboutPage = () => (
           </h1>
         </div>
       </div>
-      <div className="absolute inset-0 hidden md:block z-0">
-        <div className="absolute w-[70%] h-[50%] right-20 bottom-20 blue__gradient" />
-        <div className="absolute w-[40%] h-[40%] rounded-lg  white__gradient" />
-      </div>
+     
     </div>
   </>
 );

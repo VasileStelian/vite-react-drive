@@ -42,22 +42,21 @@ const Navbar = ({scrollToSection}) => {
         ))}
       </ul>
       <div className="sm:hidden flex flex-1 justify-end items-center">
-        <img
-          src={toggle ? close : menu}
-          alt="menu"
-          className="w-[28px] h-[28px] object-contain"
-          onClick={() => setToggle((prev) => !prev)}
-        />
+        
+        <svg  onClick={() => setToggle((prev) => !prev)}
+        className="w-[30px]" fill="#fe4875" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="m21 4c0-.478-.379-1-1-1h-16c-.62 0-1 .519-1 1v16c0 .621.52 1 1 1h16c.478 0 1-.379 1-1zm-16.5.5h15v15h-15zm12.5 10.75c0-.414-.336-.75-.75-.75h-8.5c-.414 0-.75.336-.75.75s.336.75.75.75h8.5c.414 0 .75-.336.75-.75zm0-3.248c0-.414-.336-.75-.75-.75h-8.5c-.414 0-.75.336-.75.75s.336.75.75.75h8.5c.414 0 .75-.336.75-.75zm0-3.252c0-.414-.336-.75-.75-.75h-8.5c-.414 0-.75.336-.75.75s.336.75.75.75h8.5c.414 0 .75-.336.75-.75z" fillRule="nonzero"/>
+        </svg>
         <div
           className={`${
             toggle ? "flex" : "hidden"
-          } p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w[140px] rounded-xl sidebar`}
+          } bg-black border transition-all border-neonPink rounded-md absolute right-7 top-10`}
         >
-          <ul className="list-none flex flex-col justify-end items-center flex-1 ">
+          <ul className="list-none flex flex-col justify-end items-center ">
             {navLinks.map((nav, index) => (
               <li
                 key={nav.id}
-                className={`font-poppins font-normal cursor-pointer text-[16px] ${
+                className={`cursor-pointer text-[16px] px-2 ${
                   index === navLinks.length - 1 ? "mr-0" : "mb-4"
                 } text-white`}
               >
