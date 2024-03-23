@@ -2,7 +2,7 @@ import styles from "./styles";
 import React, { useState, useEffect } from 'react';
 import { loading } from "./assets"
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Footer, Navbar, Divider } from "./components";
+import { Footer, Navbar } from "./components";
 import { ContactPage, Homepage, GalleryPage, AboutPage, NotFoundPage, } from "./pages";
 
 const LoadingScreen = () => (
@@ -52,13 +52,11 @@ const App = () => {
                 <Route path="/contact" element={<ContactPage />} />
                 <Route path="/galerie" element={<GalleryPage />} />
                 <Route path="/despre" element={<AboutPage />} />
-
                 <Route path="*" element={<NotFoundPage />} />
               </Routes>
               <Footer />
             </div>
           </div>
-          <Divider />
         </div>
       ) : (
         <LoadingScreen />

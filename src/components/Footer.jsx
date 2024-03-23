@@ -1,15 +1,16 @@
 import { footerLinks, socialMedia } from "../constants";
-import styles, { layout } from "../styles";
+import styles from "../styles";
 
 const LinkCard = ({ links }) => (
   <div className=" text-white text-center mt-2">
     <div className="flex-1 md:max-w-[350px]">
-      <h2 className={styles.heading2}>
+      <h2 className={` ${styles.heading2} border-b-2 border-neonPink`}>
         Link-uri <span className="text-gradient">Utile</span>
       </h2>
       <ul>
         {links.map((link) => (
-          <li key={link.name}>
+          <li key={link.name}
+          className="mt-2">
             <a
               href={link.link}
               className="hover:text-cyan-400 font-poppins transition"
@@ -29,7 +30,7 @@ const SocialMediaLinks = ({ socialMediaLinks }) => {
   return (
     <div className=" text-white text-center mt-2">
       <div className="flex-1">
-        <h2 className={styles.heading2}>
+        <h2 className={` ${styles.heading2} border-b-2 border-neonPink`}>
           Social <span className="text-gradient">Media</span>
         </h2>
 
@@ -65,16 +66,16 @@ const SocialMediaLinks = ({ socialMediaLinks }) => {
 };
 
 const Footer = () => (
-  <section id="footer" className="mt-20">
+  <section id="footer" className="md:p-20 mb-2">
     <div className="flex justify-around flex-wrap">
       {footerLinks.map((card) => (
         <LinkCard key={card.title} title={card.title} links={card.links} />
       ))}
       <SocialMediaLinks socialMediaLinks={socialMedia} />
     </div>
-    <span className="border-0 border-b-2 flex">asd</span>
-    <p className="flex justify-center mt-4 text-white font-poppins">
-    © {new Date().getFullYear()} | DiaDrive SRL Bacau
+    <span className=" flex">asd</span>
+    <p className="text-center mt-4 text-white font-poppins">
+    © {new Date().getFullYear()} | DiaDrive SRL Bacau. Toate Drepturile Rezervate.
     </p>
   </section>
 );

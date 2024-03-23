@@ -4,7 +4,7 @@
 
 const Map = () => (
     <div className="my-6 py-12">
-        <h1 className="text-white font-semibold text-[27px] text-center mb-10 font-poppins">Locatia <span className="text-gradient">noastra</span></h1>
+        <h1 className="text-white border-b-2 border-neonPink w-fit mx-auto font-semibold text-[27px] text-center mb-10 font-poppins">Locatia <span className="text-gradient">noastra</span></h1>
         <div className="flex items-center justify-center ">
         <iframe className="rounded-lg"
       title="Google Maps"

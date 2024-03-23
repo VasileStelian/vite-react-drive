@@ -19,7 +19,7 @@ const NumberCounter = ({ targetNumber, speed }) => {
     return undefined;
   }, [count, targetNumber, speed]);
 
-  return <div className='text-cyan-300 font-semibold text-[50px] font-poppins'>{count}+</div>;
+  return <div className='text-neonPink font-semibold text-[50px] font-poppins'>{count}+</div>;
 };
 
 export default NumberCounter;

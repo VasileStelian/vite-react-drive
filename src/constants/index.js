@@ -276,7 +276,7 @@ export const fields = [
   { name: 'fullName', placeholder: 'Nume si Prenume', type: 'text' },
   { name: 'email', placeholder: 'Adresa de Email', type: 'email' },
   { name: 'phoneNumber', placeholder: 'Numar de Telefon', type: 'tel' },
-  { name: 'category', placeholder: 'Categorii', type: 'select', options: ['Alege Catergoria', 'A1', 'A2', 'A', 'B1', 'B','B96 sau Extins','C','CE','D','DE', ] },
+  { name: 'category', placeholder: 'Categorii', type: 'checkbox', options: ['A1', 'A2', 'A', 'B1', 'B','B96 sau Extins','C','CE','D','DE', ]},
 ];
 
 export const socialMedia = [
@@ -293,4 +293,6 @@ export const socialMedia = [
     link: "https://www.facebook.com/diadrivebacau",
   },
 ];
+
+
 

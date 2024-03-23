@@ -11,8 +11,8 @@ const ContactPage = () => (
 Acesta este primul pas pentru obținerea permisului de conducere! Ce mai aștepți?"
       />
     </Helmet>
-    <section className="relative min-h-screen">
-      <div className="relative z-10 bg-black/10 rounded-2xl pb-6">
+    <section className="relative">
+      <div className="relative z-10 rounded-2xl pb-6">
         <Contact />
         <Map />
       </div>

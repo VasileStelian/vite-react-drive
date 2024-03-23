@@ -11,17 +11,14 @@ const CategoryCard = ({ icon, title, content, onClick }) => (
     <div
       className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter} bg-dimBlue`}
     >
-      <img src={icon} alt="star" className="w-[50%] h-[50%] object-contain" />
+      <img src={icon} alt={title} className="w-[70%] object-contain" />
     </div>
     <div className="flex-1 flex flex-col ml-3">
       <div className="flex justify-between">
-      <h2 className="font-poppins font-semibold cursor-pointer text-white text-[25px] leading-[23.4px] mb-2">
+      <h2 className="font-poppins text-neonPink font-semibold cursor-pointer text-white text-[25px] leading-[23.4px] mb-2">
         {title}
       </h2>
-      <img
-            src={arrowUp}
-            className="w-[25px]"
-          />
+      <svg class=' expand-arrow w-[30px]' clip-rule="evenodd" fill="#fe4875" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m11.998 2c5.517 0 9.997 4.48 9.997 9.998 0 5.517-4.48 9.997-9.997 9.997-5.518 0-9.998-4.48-9.998-9.997 0-5.518 4.48-9.998 9.998-9.998zm0 1.5c-4.69 0-8.498 3.808-8.498 8.498s3.808 8.497 8.498 8.497 8.497-3.807 8.497-8.497-3.807-8.498-8.497-8.498zm4.845 6.711c.108-.141.157-.3.157-.456 0-.389-.306-.755-.749-.755h-8.501c-.445 0-.75.367-.75.755 0 .157.05.316.159.457 1.203 1.554 3.252 4.199 4.258 5.498.142.184.36.29.592.29.23 0 .449-.107.591-.291zm-7.564.289h5.446l-2.718 3.522z" fill-rule="nonzero"/></svg>
           </div>
       <p className="font-poppins cursor-pointer font-normal text-dimWhite text-[16px] leading-[24px] line-clamp-4">
         {content}
@@ -83,31 +80,31 @@ const Categories = () => {
 
       {selectedCategory && (
         <div className="fixed top-0 left-0 right-0 bottom-0 flex items-center justify-center z-10 bg-black/50 m-2">
-          <div className="bg-gradient-to-r from-cyan-950 to to-cyan-600 p-6 rounded-lg max-w-[600px] w-full overflow-y-auto ">
+          <div className="bg-black/90 p-6 rounded-lg max-w-[600px] w-full overflow-y-auto ">
             <div className="flex justify-end">
               <button
                 onClick={() => handleCategoryClick(selectedCategory)}
                 className="text-cyan-100 font-bold transition-all hover:text-cyan-300 cursor-pointer flex items-center"
               >
-                <img src={close} className="mr-2" />
-                <span className="hidden ss:block">Inchide</span>
+                <svg class='rotate-180 expand-arrow w-[30px]' clip-rule="evenodd" fill="#fe4875" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m11.998 2c5.517 0 9.997 4.48 9.997 9.998 0 5.517-4.48 9.997-9.997 9.997-5.518 0-9.998-4.48-9.998-9.997 0-5.518 4.48-9.998 9.998-9.998zm0 1.5c-4.69 0-8.498 3.808-8.498 8.498s3.808 8.497 8.498 8.497 8.497-3.807 8.497-8.497-3.807-8.498-8.497-8.498zm4.845 6.711c.108-.141.157-.3.157-.456 0-.389-.306-.755-.749-.755h-8.501c-.445 0-.75.367-.75.755 0 .157.05.316.159.457 1.203 1.554 3.252 4.199 4.258 5.498.142.184.36.29.592.29.23 0 .449-.107.591-.291zm-7.564.289h5.446l-2.718 3.522z" fill-rule="nonzero"/></svg>
+                <span className="hidden text-neonPink ss:block">Inchide</span>
               </button>
             </div>
             <div className="flex">
               <div
-                className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter} bg-black/50 hidden ss:flex`}
+                className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter} bg-neonPink/50 hidden ss:flex`}
               >
                 <img
                   src={selectedCategory.icon}
                   alt="star"
-                  className="w-[50%] h-[50%] object-contain"
+                  className="w-[70%] object-contain"
                 />
               </div>
               <div className="flex-1 flex flex-col ml-3">
-                <h4 className="font-poppins font-semibold cursor-default text-gradient text-[25px] leading-[23.4px] mb-2">
+                <h4 className="font-poppins  font-semibold cursor-default text-neonPink text-[25px] leading-[23.4px] mb-2">
                   {selectedCategory.title}
                 </h4>
-                <p className="font-poppins cursor-default font-normal text-white text-[16px] leading-[24px] text-justify">
+                <p className="font-poppins cursor-default font-normal text-dimWhite text-[16px] leading-[24px] text-justify">
                   {selectedCategory.content}
                 </p>
               </div>

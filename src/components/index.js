@@ -4,7 +4,6 @@ import Hero from "./Hero";
 import Categories from "./Categories";
 import Faq from "./Faq";
 import Stats from "./Stats"
-import Divider from "./Divider";
 import Contact from "./Contact";
 import Gallery from "./Gallery";
 import Map from "./Map";
@@ -18,7 +17,6 @@ export{
     Categories,
     Faq,
     Stats,
-    Divider,
     Contact,
     Gallery,
     Map,
