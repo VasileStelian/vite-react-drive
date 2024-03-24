@@ -36,7 +36,7 @@ export const categories = [
     icon: A1,
     title: "A1",
     content:
-      "Categoria A1 se referă la motociclete cu o putere maximă de 11 kW (15 cai putere) și o raport putere/greutate care nu depășește 0,1 kW/kg. Această categorie este destinată persoanelor care doresc să conducă motociclete mai ușoare și cu performanțe moderate. Disponibil de la vârsta de 16 ani.",
+      "Categoria A1 se referă la motociclete cu o putere maximă de 11 kW (15 cai putere) și un raport putere/greutate care nu depășește 0,1 kW/kg. Această categorie este destinată persoanelor care doresc să conducă motociclete mai ușoare și cu performanțe moderate. Disponibil de la vârsta de 16 ani.",
   },
   {
     id: "A2",
