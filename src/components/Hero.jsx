@@ -21,7 +21,6 @@ const Hero = () => (
     </div>
     <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}>
       <img src={logobig} alt="logo" className="w-full relative z-[5]" />
-      
     </div>
   </section>
 );

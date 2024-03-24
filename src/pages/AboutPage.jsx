@@ -36,7 +36,6 @@ const AboutPage = () => (
           </h1>
         </div>
       </div>
-     
     </div>
   </>
 );
