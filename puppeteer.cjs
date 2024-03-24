@@ -3,7 +3,9 @@ const fs = require('fs');
 const path = require('path');
 
 async function renderPage(url, fileName) {
-  const browser = await puppeteer.launch();
+  const browser = await puppeteer.launch({
+    args: ['--no-sandbox'], // Add --no-sandbox flag here
+  });
   const page = await browser.newPage();
   await page.goto(url, { waitUntil: 'networkidle2' });
   const htmlContent = await page.content();
