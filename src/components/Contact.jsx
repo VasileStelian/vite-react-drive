@@ -11,6 +11,9 @@ const Contact = () => {
     phoneNumber: "",
     category: "",
   });
+  const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+  const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+  const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
   const [emailSent, setEmailSent] = useState(false);
   const [error, setError] = useState(false);
@@ -45,8 +48,8 @@ const Contact = () => {
     }
 
     emailjs
-      .sendForm("service_jgufc7i", "template_wayomhe", form.current, {
-        publicKey: "GVzhGri5xTPKfjyzn",
+      .sendForm(serviceId, templateId, form.current, {
+        publicKey: publicKey,
       })
       .then(
         () => {
