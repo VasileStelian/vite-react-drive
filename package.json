@@ -11,7 +11,7 @@
     "preview": "vite preview"
   },
   "reactSnap": {
-    "source": "/",
+    "source": "dist",
     "skipThirdPartyRequests": true,
     "preconnectThirdParty": false,
     "puppeteerArgs": [
