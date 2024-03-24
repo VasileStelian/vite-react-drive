@@ -3,15 +3,8 @@ import React from 'react';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Footer, Navbar } from "./components";
 import { ContactPage, Homepage, GalleryPage, AboutPage, NotFoundPage, CategoriesPage } from "./pages";
-import { SpeedInsights } from "@vercel/speed-insights/next"
-import { Analytics } from "@vercel/analytics/react"
 
 
-Deploy & Visit your Site
-
-Deploy your changes and visit the deployment to collect your page views.
-
-If you don't see data after a 30 seconds, please check for content
 
 
 const App = () => {
@@ -19,8 +12,6 @@ const App = () => {
   return (
     <BrowserRouter>
         <main className=" w-full overflow-hidden">
-        <SpeedInsights/>
-        <Analytics/>
           <div className={`${styles.paddingX} ${styles.flexCenter}`}>
             <div className={`${styles.boxWidth}`}>
               <Navbar />
