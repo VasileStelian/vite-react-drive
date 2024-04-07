@@ -9,7 +9,7 @@ const Navbar = ({scrollToSection}) => {
   return (
     <nav className="w-full relative flex py-6 justify-between items-center navbar z-[150] ">
       <img src={logo} alt="diadrive" className="w-[120px] " />
-      <ul className="list-none sm:flex hidden justify-end items-center flex-1 ">
+      <ul className="list-none md:flex hidden justify-end items-center flex-1 ">
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
@@ -41,7 +41,7 @@ const Navbar = ({scrollToSection}) => {
           </li>
         ))}
       </ul>
-      <div className="sm:hidden flex flex-1 justify-end items-center">
+      <div className="md:hidden flex flex-1 justify-end items-center">
         
         <svg  onClick={() => setToggle((prev) => !prev)}
         className="w-[30px]" fill="#fe4875" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
